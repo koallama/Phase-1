@@ -10,9 +10,18 @@
     <div style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center;">
       <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
     </div>
-    <button id="home-button7" class="button button-dark  button-clear icon ion-ios-heart-outline"></button>
+    <button id="home-button7" class="button button-dark  button-clear icon ion-ios-heart-outline" ng-class="{'icon ion-ios-heart': liked, 'icon ion-ios-heart-outline': !liked}" ng-click="liked=!liked"></button>
     <button id="home-button8" class="button button-dark  button-clear icon ion-ios-chatbubble-outline"></button>
     <div id="home-markdown3" class="show-list-numbers-and-dots">
+      
+          <div class="list">
+
+    <label class="item-input-wrapper">
+      <input type="text" placeholder="Write Comment...">
+    </label>
+    <button class="button button-small">Submit</button>
+
+</div>
       <p style="color:#000000;">Some commment here</p>
     </div>
   </ion-content>
